@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aionopolis Institute Of Medicine: Digestive System Simulation Lab</title>
+    <link rel="icon" type="image/x-icon" href="aim.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+      html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      }
+
+      body {
+        background-image:url(16.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        border-style: solid;
+        border-style: solid;
+        border-width: 5px;
+      }
+
+        .logo {
+            width : 50px;
+            height : 50px;
+        }  
+        .centered {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size:xx-large;
+        font-family:'Times New Roman', Times, serif;
+        color:blueviolet;
+      }
+      .centere {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size:medium;
+        font-family:'Times New Roman', Times, serif;
+        color:black;
+        text-align:center;
+      }
+        img {
+        object-fit:cover;
+        opacity: 0.85;
+        }
+        p {
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h4 {
+          color:blue;
+        }
+        .Videos {
+          text-align:center;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size:x-large;
+        }
+       
+
+main {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+ 
+  
+  &:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: black;
+    text-align: center;
+    line-height: 1.25em;
+    color: white;
+    font-size: 1em;
+}
+
+p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+  
+  &:before {
+    left: 100%; 
+    margin-left: -20px;
+  }
+  }
+
+p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+  
+  &:before {
+    right: 100%; 
+    margin-right: -20px;
+  }
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+.footer-clean {
+  padding:50px 0;
+  background-color:black;
+  color:white;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright 
+    {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6 ;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Home.html"><img src="aim.png" class="logo" alt=""> Aionopolis Institute of Medicine</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="ContactPage.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                </svg><i class="bi bi-person-lines-fill"></i>ㅤContacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More  
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Sonnets.html">Sonnet Writing</a></li>
+             
+                  <li><a class="dropdown-item" href="Biology.html">Digestive System Simulation Lab</a></li>
+                  <li><a class="dropdown-item" href="Documentations.html">Biology Documentations</a></li>
+                  
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Programs.html">Programs</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="14.jpg" class="d-block w-100" width ="400" height = "580" alt="">
+          </div>
+          <div class="centered">Biology</div>
+          <div class="centere">Learning about the digestive system is crucial because it helps us understand how our bodies process food, promotes healthy habits, prevents digestive disorders, supports scientific literacy, and contributes to overall health and wellbeing. By understanding the different organs and processes involved in digestion, we can make informed choices about our diet and lifestyle, prevent or manage digestive issues, and better understand and manage chronic conditions that affect the digestive system. This knowledge is essential for promoting good health and scientific literacy.</div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <main>
+        <h1 style="font-style:italic;"><b>Section 1: Stages of Food Processing</b></h1>
+        <h4>Crushing Stage</h4>
+        <p><b>Question 1: </b>Within the crushing stage, when bananas and soda crackers are placed into the ziploc bag, we observed that this represents the food that enters the stomach. The simulation resembles when food enters that stomach once it passes the lower esophageal sphincter.</p>
+        <p><b>Question 2: </b>Our observations indicate that the water added to the bag created a moist environment where the other foods could mix together. This mimics how the stomach works to break down food into smaller pieces by producing hydrochloric acid and other enzymes. Furthermore, the procedure simulates the secretion of digestive juices by the stomach, which aids in the breakdown of food.</p>
+        <p><b>Question 3: </b>With the ziploc bag serving as the storage of the banana, soda crackers, and other pieces of nutriments, we believe that this represents the stomach. As food is stored in this organ and combined with various acids to break food down.</p>
+        <p><b>Question 4: </b>We saw that while the food inside the ziploc bag was being broken down, everything inside the bag was also being mixed during the crushing stage. As a result, crushing food simulates how the stomach breaks down food into smaller pieces.</p>
+        <p><b>Question 5: </b>Following the orange juice addition process, we noticed that it mimics the action of the stomach, which secretes digestive enzymes—specifically, amylase. The enzyme amylase, which helps break down carbohydrates, is represented by orange juice. Moreover, the body's salivary glands produce amylase. Essentially, this procedure depicts the role of the stomach in digestion, with the orange juice representing for salivary amylase, which breaks down carbohydrates, represented by the crackers and banana.</p>
+        <p><b>Question 6: </b>As we noted in our earlier response, recognizing the fact that the ziploc bag represents the stomach, and since the stomach secretes enzymes to break down proteins, proteins could be among the biomolecules contained in the food that was placed inside the ziploc bag.</p>
+        <h4>Transfer Stage</h4>
+        <p><b>Question 7: </b>From our observations, we believe that the liquid that flowed out of the stocking are digestive juices produced by the stomach. The muscles in our stomachs that mix and churn food with digestive juices to break it down into a liquid form that our bodies can absorb were represented by the squeezing of the sock.</p>
+        <p><b>Question 8: </b>In this activity, the tray is an equivalent for a container that is meant to hold the liquid that comes out when the crushed food is squeezed inside the sock. The container is dependent upon its setting. The tray could be a container used in the medical field to gather bodily fluids, such as urine, for testing. In general, the tray represents a container used to hold and transfer liquids.</p>
+        <p><b>Question 9: </b>Before cutting out a hole in the sock to move out excess material, we looked inside the stocking to see a dried mixture of food. With the liquid eliminated, the food inside is completely drained of fluids, and over time, the blend of grub solidified. </p>
+        <p><b>Question 10: </b>Pushing the partially soldifiied content through the stocking represents peristalsis during digestion. Peristalsis is the process where muscles contract to transport food along the digestive system. During the process of this experiment, the sock serves as a representation of the intestine, and pushing out the contents of the stocking simulates the movement of food through the intestines towards elimination.</p>
+        <h1 style="font-style:italic;"><b>Section 2: Simulation of Absorption</b></h1>
+        <p><b>Question 11: </b>During this procedure, the paper towel that absorbed the most amount of water is the one that was folded the most, or three times. The possible explanation is that it has the most surface area for water to be absorbed, allowing for greater absorption. On the contrary, the paper towel that was never folded absorbed the least amount of water, due to its small surface area.</p>
+        <p><b>Question 12: </b>The paper towels most likely represent villi and microvilli in the small intestine. Folding the paper towels increases the surface area, resulting in greater absorption. The same is true for the aforementioned organ, which increase their surface area for more efficient nutrient absorption. The best way to relate paper towels to the small intestine is that a small intestine with more villi and microvilli absorbs nutrients better, just as a paper towel with more folds absorbs more water.</p>
+        <h1 style="font-style:italic;"><b>Section 3: Simulation of Bile Action</b></h1>
+        <p><b>Question 13: </b>Bile is a fluid produced by the liver. Its main function in digestion is that it breaks down fat into smaller pieces, which makes it easier for enzymes, lipase to be specific, to break it down into fatty acids. Which the body absorbs into the digestive tract. Due to the fact that the role of bile uses enzymes to break down food as opposed to physical motions to do so makes it so that Bile is involved in Chemical Digestion.</p>
+        <p><b>Conclusion: </b>This simulation perfectly mimics the functions of the stomach onwards in digestion. You have clear illustrations of how the stomach breaks down food, how nutrients are absorbed, and how waste is eliminated. And these are only a few of the highlights of this experiment. With its simple procedures and abundance of accessible materials, anybody who is interested in getting a visual representation of how digestion works can use this activity to do so!</p>
+        </main>
+
+        <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Community</h3>
+                        <ul>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Parents & Families</a></li>
+                            <li><a href="#">Faculty and Staff</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Institute</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://twitter.com/YunkoRikura"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg><i class="bi bi-twitter-x"></i></a><a href="https://m.facebook.com/profile.php/?id=100011553191789&name=STSDirectNavUserDecorator"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg><i class="bi bi-facebook"></i></a><a href="https://m.youtube.com/@raphaelectric9751"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg><i class="bi bi-youtube"></i></a><a href="https://mail.google.com/mail/u/0/#chat/space/AAAAUf8vQ3Q"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
+                      <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                      <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                    </svg><i class="bi bi-envelope-plus"></i></a>
+                        <p class="copyright">Aionopolis Institute Of Medicine © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+      </body>
+    </html>
